@@ -405,26 +405,21 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 /* Fix section — circular photo */
 .fix-visual { display: flex; justify-content: center; }
 .curve-mask {
-  width: 100%;
-  max-width: 420px;
-  aspect-ratio: 1 / 1;
+  width: 420px;
+  height: 420px;
   border-radius: 50%;
   border: 6px solid rgba(245, 128, 38, 0.55);
   box-shadow: var(--shadow-lg), 0 0 60px rgba(245, 128, 38, 0.18);
-  overflow: hidden;
+  background: url('solar-panels.jpg') center / cover no-repeat;
 }
-.fix-photo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
+@media (max-width: 500px) {
+  .curve-mask { width: 300px; height: 300px; }
 }
 
 @media (max-width: 940px) {
   .fix { padding: 4.5rem 0; }
   .fix-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-  .curve-mask { max-width: 320px; }
+  .curve-mask { width: 320px; height: 320px; }
 }
 
 /* ---------- Why ---------- */
