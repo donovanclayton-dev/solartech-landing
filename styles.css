@@ -213,31 +213,31 @@ h3 { font-size: 1.15rem; font-weight: 700; }
 
 /* Floating preview card */
 .hero-card {
-  background: rgba(255,255,255,0.08);
+  background: rgba(12,31,55,0.72);
   border: 1px solid rgba(255,255,255,0.16);
   backdrop-filter: blur(14px);
   border-radius: var(--r-lg);
   overflow: hidden;
-  width: 280px;
+  width: 360px;
   flex-shrink: 0;
   box-shadow: var(--shadow-lg);
   margin-bottom: 0.5rem;
 }
-.hero-card-img { width: 100%; height: 160px; object-fit: cover; }
-.hero-card-body { padding: 1.1rem 1.2rem 1.2rem; }
+.hero-card-img { width: 100%; height: 220px; object-fit: cover; }
+.hero-card-body { padding: 1.4rem 1.5rem 1.5rem; }
 .hero-card-label {
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   font-weight: 700;
   color: var(--orange);
-  letter-spacing: 0.06em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
 }
 .hero-card-desc {
-  font-size: 0.88rem;
-  color: rgba(255,255,255,0.7);
-  margin-bottom: 1rem;
-  line-height: 1.4;
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.75);
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
 }
 
 @media (max-width: 900px) {
