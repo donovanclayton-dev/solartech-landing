@@ -206,7 +206,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
     linear-gradient(175deg, rgba(12,31,55,0.88) 0%, rgba(24,62,109,0.76) 55%, rgba(12,31,55,0.88) 100%),
     url('hero-bg.jpg') center/cover no-repeat;
   color: #fff;
-  padding: 6rem 0 0;
+  padding: 6rem 0 7rem;
   overflow: hidden;
   text-align: center;
 }
