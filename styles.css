@@ -297,8 +297,11 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 }
 
 .hero-float-card--chart {
-  min-width: 260px;
-  padding: 1.2rem 1.6rem 1.4rem;
+  min-width: 300px;
+  padding: 1.2rem 1.4rem 1rem;
+  background: #ffffff;
+  border-color: rgba(255,255,255,0.9);
+  box-shadow: 0 -8px 32px rgba(0,0,0,0.18);
 }
 
 .hero-float-num {
@@ -327,7 +330,21 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   line-height: 1.4;
 }
 
-.hero-mini-chart { width: 100%; height: auto; margin-bottom: 0.4rem; }
+.chart-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0 0 0.1rem;
+  letter-spacing: 0.01em;
+}
+
+.chart-sub {
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  margin: 0 0 0.8rem;
+}
+
+.hero-mini-chart { width: 100%; height: auto; }
 
 @media (max-width: 700px) {
   .hero { padding: 4.5rem 0 0; }
