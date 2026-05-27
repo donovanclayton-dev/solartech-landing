@@ -102,6 +102,19 @@ h3 { font-size: 1.15rem; font-weight: 700; }
 }
 .btn-white:hover { background: rgba(255,255,255,0.9); transform: translateY(-1px); }
 
+.btn-hero-orange {
+  background: var(--orange);
+  color: var(--white);
+  border-color: var(--orange);
+  box-shadow: 0 0 24px rgba(245,128,38,0.45), 0 8px 24px rgba(245,128,38,0.3);
+  transition: transform 0.15s, box-shadow 0.25s, background 0.2s;
+}
+.btn-hero-orange:hover {
+  background: var(--orange-2);
+  transform: translateY(-2px);
+  box-shadow: 0 0 48px rgba(245,128,38,0.75), 0 12px 36px rgba(245,128,38,0.5);
+}
+
 .btn-white-sm {
   display: inline-flex;
   align-items: center;
