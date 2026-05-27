@@ -4,21 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SolarTech — Summer Heat Is Rising. So Are Your Electric Bills.</title>
-  <meta name="description" content="San Diego utility rates climb every year — and summer heat waves push you into the highest tier. Go solar for $0 down and see day-one savings. Free estimate, no credit check." />
-  <meta name="theme-color" content="#183E6D" />
-
+  <meta name="description" content="San Diego utility rates climb every year. Go solar for $0 down and see day-one savings. Free estimate, no credit check." />
+  <meta name="theme-color" content="#0C1F37" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to main content</a>
 
+  <!-- ── NAV ──────────────────────────────────────────── -->
   <header class="site-header" data-header>
     <div class="container nav">
-      <a href="#top" class="logo" aria-label="SolarTech — Solar That Works For You">
-        <img src="logo-white.png" alt="SolarTech — Solar That Works For You™" class="logo-img" />
+      <a href="#top" class="logo" aria-label="SolarTech">
+        <img src="logo-white.png" alt="SolarTech" class="logo-img" />
       </a>
       <nav aria-label="Primary">
         <ul class="nav-links">
@@ -31,222 +30,242 @@
     </div>
   </header>
 
-  <main id="main">
+  <main>
     <a id="top"></a>
 
     <!-- ── HERO ─────────────────────────────────────────── -->
     <section class="hero" aria-labelledby="hero-heading">
-      <div class="hero-bg" aria-hidden="true">
-        <span class="heat-ray heat-ray-1"></span>
-        <span class="heat-ray heat-ray-2"></span>
-        <span class="heat-ray heat-ray-3"></span>
-      </div>
-      <div class="container hero-content">
-        <span class="eyebrow">$0 DOWN · DAY-1 SAVINGS · SAN DIEGO HOMEOWNERS</span>
-        <h1 id="hero-heading">Summer Heat Is Rising.<br />So Are Your Electric Bills.</h1>
-        <p class="lede">
-          A single heat wave can push you into your utility's highest pricing tier. San Diego homeowners are going solar for $0 down with combined payments lower than their current bill — starting the very first month.
-        </p>
-        <div class="hero-cta">
-          <a href="https://solartechonline.com/solar-panel-cost-calculator/" class="btn btn-primary btn-lg" rel="noopener">
-            See If Your Home Qualifies
-            <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-          <a href="#services" class="btn btn-ghost btn-lg">Explore financing options</a>
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="hero-eyebrow">More Power. More Savings.</span>
+          <h1 id="hero-heading">San Diego's Solar,<br>Done Right.</h1>
+          <p class="hero-lede">$0 down. Day-1 savings. 25 years of guaranteed performance — installed by the same in-house San Diego crew since 2001.</p>
+          <div class="hero-actions">
+            <a href="https://solartechonline.com/solar-panel-cost-calculator/" class="btn btn-white" rel="noopener">
+              See If Your Home Qualifies
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
         </div>
 
-      </div>
-    </section>
-
-    <!-- ── ABOUT ──────────────────────────────────────────── -->
-    <section id="about" class="about" aria-labelledby="about-heading">
-      <div class="container about-grid">
-        <div class="about-copy">
-          <span class="section-tag">About Us</span>
-          <h2 id="about-heading">San Diego's Most Trusted Solar Installer</h2>
-          <p>SolarTech is a leading provider of solar energy solutions dedicated to empowering San Diego homeowners with clean, affordable power. We have been installing solar since 2001 — before most solar companies existed. Our crew is 100% in-house with no subcontractors.</p>
-          <div class="about-stats">
-            <div class="about-stat">
-              <span class="about-stat-num">25+</span>
-              <span class="about-stat-label">Years in Solar</span>
-            </div>
-            <div class="about-stat">
-              <span class="about-stat-num">15K+</span>
-              <span class="about-stat-label">Successful Installs</span>
-            </div>
-          </div>
-          <div class="about-trust">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="#F58026" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <span>Excellent 4.9/5 · 800+ Google Reviews</span>
-          </div>
-          <a href="https://solartechonline.com/solar-panel-cost-calculator/" class="btn btn-primary" rel="noopener">Get a Free Estimate</a>
-        </div>
-        <div class="about-img-wrap">
-          <img src="about-1.jpg" alt="SolarTech solar panel installation" class="about-img" />
-          <div class="about-badge">
-            <span class="about-badge-num">$0</span>
-            <span class="about-badge-label">Down · Day-1 Savings</span>
+        <!-- Floating preview card (right side) -->
+        <div class="hero-card" aria-hidden="true">
+          <img src="aerial-luxury.png" alt="" class="hero-card-img" />
+          <div class="hero-card-body">
+            <p class="hero-card-label">Real SolarTech Installation</p>
+            <p class="hero-card-desc">San Diego luxury estate — fully solar-powered.</p>
+            <a href="https://solartechonline.com/solar-panel-cost-calculator/" class="btn btn-white-sm" rel="noopener">
+              Get Started
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ── PROBLEM ───────────────────────────────────────── -->
-    <section id="problem" class="problem" aria-labelledby="problem-heading">
+    <!-- ── STATS BAR ──────────────────────────────────── -->
+    <section class="stats-bar" aria-label="SolarTech by the numbers">
+      <div class="container stats-grid">
+        <div class="stat-item">
+          <span class="stat-num">25+</span>
+          <span class="stat-label">Years in Business</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">15,000+</span>
+          <span class="stat-label">Installs Completed</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">$0</span>
+          <span class="stat-label">Down to Get Started</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">800+</span>
+          <span class="stat-label">5-Star Google Reviews</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FEATURE GRID ───────────────────────────────── -->
+    <section id="about" class="features" aria-labelledby="features-heading">
       <div class="container">
-        <div class="section-header-split">
-          <div>
-            <span class="section-tag">The Problem</span>
-            <h2 id="problem-heading">Every Month You Wait,<br>Your Utility Wins.</h2>
-          </div>
-          <p class="section-lede">San Diego utility rates have climbed 7–9% every year for the past decade. The real question is whether you can afford to keep paying a bill that goes up every year.</p>
+        <div class="section-intro">
+          <span class="section-tag">More Energy · More Savings</span>
+          <h2 id="features-heading">Stop Paying More.<br>Start Saving Today.</h2>
         </div>
+        <div class="features-grid">
 
-        <div class="problem-grid">
-          <article class="problem-card">
-            <div class="card-num">01</div>
-            <h3>Rates climb every year.</h3>
-            <p>San Diego homeowners are paying 40–60% more in electricity now than five years ago. Rate hikes get approved every cycle — without solar, that trend continues year after year.</p>
-          </article>
-          <article class="problem-card">
-            <div class="card-num">02</div>
-            <h3>Heat waves push you into the highest tier.</h3>
-            <p>When the temperature climbs, your AC runs longer and your home crosses into the utility's highest pricing tier. Those penalty rates apply to every kilowatt past the threshold.</p>
-          </article>
-          <article class="problem-card">
-            <div class="card-num">03</div>
-            <h3>There is no good time to wait.</h3>
-            <p>Every month you delay is another month you hand money to the utility. Solar locks in your rate the day it switches on — and San Diego summers are not getting any cooler.</p>
-          </article>
+          <!-- Large photo card -->
+          <div class="feat-card feat-card--photo">
+            <img src="frame_0.jpg" alt="Aerial view of San Diego neighborhood with SolarTech solar installations" class="feat-photo" />
+            <div class="feat-photo-overlay">
+              <p class="feat-photo-label">San Diego neighborhoods powered by SolarTech</p>
+              <div class="feat-widget">
+                <span class="feat-widget-label">Homes Saved</span>
+                <span class="feat-widget-num">15,000+</span>
+                <span class="feat-widget-sub">across Southern California</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Two info cards -->
+          <div class="feat-card feat-card--info">
+            <div class="feat-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            </div>
+            <h3>$0 Down Solar</h3>
+            <p>Financing structured to put you ahead on day one — payments below your current utility bill from month one.</p>
+          </div>
+
+          <div class="feat-card feat-card--info">
+            <div class="feat-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3>Built for Your Home</h3>
+            <p>Every system is custom-designed in-house for your roof, usage, and San Diego sun exposure — no subcontractors, ever.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ── SERVICES ──────────────────────────────────────── -->
+    <!-- ── SPLIT SECTION ─────────────────────────────── -->
+    <section class="split-section" aria-labelledby="split-heading">
+      <div class="container split-grid">
+        <div class="split-copy">
+          <span class="section-tag">More Energy · More Savings</span>
+          <h2 id="split-heading">Energy Savings Made Easy With Solar</h2>
+          <p>San Diego utility rates have climbed 7–9% every year for the past decade. Solar locks in your power cost the day it switches on and produces the most on the same hot, sunny days your AC works hardest.</p>
+          <ul class="check-list">
+            <li>$0 down — payments structured below your current bill</li>
+            <li>Lock in your rate for 25+ years</li>
+            <li>Peak solar output on peak heat days</li>
+            <li>100% in-house crew, no subcontractors</li>
+          </ul>
+          <a href="https://solartechonline.com/solar-panel-cost-calculator/" class="btn btn-dark" rel="noopener">
+            Get Started
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+        <div class="split-visual">
+          <img src="install-sandiego.png" alt="SolarTech installation on San Diego tile roof" class="split-img" />
+          <div class="split-widget" aria-hidden="true">
+            <div class="split-widget-row">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="#F58026"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              <div>
+                <span class="split-widget-num">$0</span>
+                <span class="split-widget-label">Down to Start</span>
+              </div>
+            </div>
+            <div class="split-widget-divider"></div>
+            <div class="split-widget-row">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="#F58026"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <div>
+                <span class="split-widget-num">4.9★</span>
+                <span class="split-widget-label">Google Rating</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SERVICES ──────────────────────────────────── -->
     <section id="services" class="services" aria-labelledby="services-heading">
       <div class="container">
-        <div class="section-header-split">
-          <div>
-            <span class="section-tag">Services</span>
-            <h2 id="services-heading">Our Solar Solutions</h2>
-          </div>
-          <p class="section-lede">We believe in the power of solar energy to transform lives and lower energy costs permanently.</p>
+        <div class="section-intro">
+          <span class="section-tag">More Energy · More Savings</span>
+          <h2 id="services-heading">Transform Your Home's Energy.</h2>
         </div>
         <div class="services-grid">
-          <a href="https://solartechonline.com/solar-panel-cost-calculator/" class="service-card" style="background-image: url('bat-f.jpg')" rel="noopener">
-            <div class="service-card-overlay">
+          <a href="https://solartechonline.com/solar-panel-cost-calculator/" class="svc-card" rel="noopener">
+            <img src="bat-f.jpg" alt="Residential Solar" class="svc-img" />
+            <div class="svc-overlay">
+              <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>
               <h3>Residential Solar</h3>
-              <span class="service-arrow">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
+              <p>$0 down, day-1 savings for San Diego homeowners.</p>
             </div>
           </a>
-          <a href="https://solartechonline.com/solar-panel-cost-calculator/" class="service-card" style="background-image: url('service-commercial.jpg')" rel="noopener">
-            <div class="service-card-overlay">
+          <a href="https://solartechonline.com/solar-panel-cost-calculator/" class="svc-card" rel="noopener">
+            <img src="crew-rooftop.png" alt="Commercial Solar" class="svc-img" />
+            <div class="svc-overlay">
+              <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
               <h3>Commercial Solar</h3>
-              <span class="service-arrow">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
+              <p>Custom commercial systems designed and installed in-house.</p>
             </div>
           </a>
-          <a href="https://solartechonline.com/solar-panel-cost-calculator/" class="service-card" style="background-image: url('powerwall.jpg')" rel="noopener">
-            <div class="service-card-overlay">
+          <a href="https://solartechonline.com/solar-panel-cost-calculator/" class="svc-card" rel="noopener">
+            <img src="powerwall.jpg" alt="Battery Storage" class="svc-img" />
+            <div class="svc-overlay">
+              <div class="svc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="7" width="16" height="10" rx="2"/><line x1="22" y1="11" x2="22" y2="13"/></svg></div>
               <h3>Battery Storage</h3>
-              <span class="service-arrow">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
+              <p>Ride through outages and shift away from peak-price hours.</p>
             </div>
           </a>
         </div>
-        <div class="services-cta">
-          <a href="https://solartechonline.com/solar-panel-cost-calculator/" class="btn btn-primary" rel="noopener">View All Services</a>
-        </div>
       </div>
     </section>
 
-    <!-- ── FIX ───────────────────────────────────────────── -->
-    <section id="fix" class="fix" aria-labelledby="fix-heading">
-      <div class="container fix-grid">
-        <div>
-          <span class="section-tag section-tag-on-dark">The Fix</span>
-          <h2 id="fix-heading">Solar gives you a fixed-rate roof.</h2>
-          <p class="section-lede section-lede-on-dark">
-            Go solar for $0 down and lock in your power cost the day it switches on. Your system produces the most on the same hot, sunny days your AC works hardest — so you're covered exactly when it counts.
-          </p>
-          <ul class="fix-list">
-            <li><strong>$0 down to get started</strong> — financing options structured to come in below your current utility bill from month one.</li>
-            <li><strong>Lock in your rate for 25+ years</strong> with a Tier-1 panel and inverter system.</li>
-            <li><strong>Peak production on peak days</strong> — solar output rises with the sun, right when you need it most.</li>
-            <li><strong>Net metering banks the surplus</strong> — overproduce by day, draw on credits at night.</li>
-          </ul>
-          <a href="https://solartechonline.com/solar-panel-cost-calculator/" class="btn btn-accent btn-lg" rel="noopener">
-            See If Your Home Qualifies
-            <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-        </div>
-        <div class="fix-visual" aria-hidden="true">
-          <div class="curve-mask"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── WHY / BENEFITS ────────────────────────────────── -->
-    <section id="why" class="why" aria-labelledby="why-heading">
+    <!-- ── WHY / BENEFITS ────────────────────────────── -->
+    <section id="why" class="why-section" aria-labelledby="why-heading">
       <div class="container">
-        <div class="section-header-split">
-          <div>
-            <span class="section-tag">Benefits</span>
-            <h2 id="why-heading">Why Should You Go Solar?</h2>
-          </div>
-          <p class="section-lede">We believe in the power of solar energy to transform lives, lower bills, and build a cleaner San Diego.</p>
+        <div class="section-intro section-intro--light">
+          <span class="section-tag section-tag--light">Why SolarTech</span>
+          <h2 id="why-heading">25 Years. Same San Diego Team.</h2>
+          <p class="why-lede">We have been installing solar in San Diego since 2001 — before most solar companies existed. Our crew is 100% in-house with no subcontractors, and we are here long after installation day.</p>
         </div>
-
         <div class="why-grid">
           <article class="why-card">
-            <div class="why-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-            </div>
-            <h3>Environmental Benefits</h3>
-            <p>Reduce your carbon footprint, protect the planet, and preserve a cleaner environment for future generations.</p>
+            <div class="why-num">01</div>
+            <h3>Trustworthy</h3>
+            <p>25 years since 2001, 15,000+ completed projects — a track record you can verify.</p>
           </article>
           <article class="why-card">
-            <div class="why-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-            </div>
-            <h3>Financial Benefits</h3>
-            <p>$0 down, payments below your current bill from day one, and long-term savings that compound year after year.</p>
+            <div class="why-num">02</div>
+            <h3>Accountable</h3>
+            <p>100% in-house crews handle design, install, permits, and interconnection. No subcontractors, ever.</p>
           </article>
           <article class="why-card">
-            <div class="why-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-            </div>
-            <h3>Energy Independence</h3>
-            <p>Take control of your energy supply. Lock in your rate and stop being at the mercy of utility price hikes.</p>
+            <div class="why-num">03</div>
+            <h3>Customer Centric</h3>
+            <p>SolarFax® monitoring flags performance issues within 48 hours so your savings stay protected for life.</p>
           </article>
           <article class="why-card">
-            <div class="why-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
-            <h3>Reliability</h3>
-            <p>25-year production guarantee, SolarFax® monitoring, and 100% in-house service — long after installation day.</p>
+            <div class="why-num">04</div>
+            <h3>Disciplined</h3>
+            <p>Maxeon & REC certified panels, 25-year production guarantee, BBB accredited — from quote to powered on.</p>
           </article>
+        </div>
+
+        <!-- Crew photo band -->
+        <div class="crew-band">
+          <img src="crew-truck.jpg" alt="SolarTech crew and branded truck" class="crew-img" />
+          <div class="crew-overlay">
+            <p class="crew-tagline">Solar That Works For You™</p>
+            <a href="https://solartechonline.com/solar-panel-cost-calculator/" class="btn btn-white" rel="noopener">
+              See If Your Home Qualifies
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ── CLOSING CTA ───────────────────────────────────── -->
+    <!-- ── CLOSING CTA ───────────────────────────────── -->
     <section class="closing-cta" aria-labelledby="closing-heading">
       <div class="container closing-grid">
         <div>
-          <h2 id="closing-heading">Stop Paying More. Start Saving Today.</h2>
-          <p>$0 down. Payments structured below your current bill. See what solar would cost you in about 90 seconds — free estimate, no credit check, no pressure.</p>
+          <h2 id="closing-heading">Stop Paying More.<br>Start Saving Today.</h2>
+          <p>$0 down. Payments below your current bill. Free estimate in 90 seconds — no credit check, no pressure.</p>
         </div>
         <div class="closing-actions">
-          <a href="https://solartechonline.com/solar-panel-cost-calculator/" class="btn btn-primary btn-lg btn-on-light" rel="noopener">
+          <a href="https://solartechonline.com/solar-panel-cost-calculator/" class="btn btn-primary btn-lg" rel="noopener">
             See If Your Home Qualifies
-            <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
-          <a href="https://solartechonline.com/solar-panel-cost-calculator/" class="btn btn-ghost btn-ghost-on-light btn-lg" rel="noopener">Explore Financing Options</a>
+          <a href="https://solartechonline.com/solar-panel-cost-calculator/" class="btn btn-ghost-dark btn-lg" rel="noopener">Explore Financing</a>
         </div>
       </div>
     </section>
@@ -256,13 +275,11 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <div class="logo logo-footer" aria-label="SolarTech">
-          <img src="logo-white.png" alt="SolarTech — Solar That Works For You™" class="logo-img logo-img-footer" />
-        </div>
+        <img src="logo-white.png" alt="SolarTech" class="logo-img logo-img-footer" />
         <p class="footer-tag">Solar That Works For You™ — Trusted since 2001.</p>
       </div>
       <div>
-        <h4>Take action</h4>
+        <h4>Take Action</h4>
         <ul>
           <li><a href="https://solartechonline.com/solar-panel-cost-calculator/" rel="noopener">See If Your Home Qualifies</a></li>
           <li><a href="https://solartechonline.com" rel="noopener">Get a Free Quote</a></li>
@@ -270,7 +287,7 @@
         </ul>
       </div>
       <div>
-        <h4>Learn more</h4>
+        <h4>Learn More</h4>
         <ul>
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
@@ -287,7 +304,7 @@
       </div>
     </div>
     <div class="container footer-bottom">
-      <small>&copy; <span id="year"></span> SolarTech. Licensed solar contractor. All rights reserved. Payment examples are estimates based on average system size and utility rates. Actual savings may vary. Subject to credit approval.</small>
+      <small>&copy; <span id="year"></span> SolarTech. Licensed solar contractor. All rights reserved. Payment examples are estimates. Actual savings may vary. Subject to credit approval.</small>
     </div>
   </footer>
 
