@@ -183,80 +183,146 @@ h3 { font-size: 1.15rem; font-weight: 700; }
 .hero {
   position: relative;
   min-height: 100vh;
-  background: url('house-dusk.png') center / cover no-repeat;
+  background: url('house-dusk.png') center 30% / cover no-repeat;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 8rem 0 6rem;
+  justify-content: center;
+  padding: 9rem 1.5rem 7rem;
   overflow: hidden;
+  text-align: center;
 }
+
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(110deg, rgba(8,18,32,0.88) 0%, rgba(12,31,55,0.72) 50%, rgba(12,31,55,0.35) 100%);
+  /* Light at center, darker at edges — lets the photo breathe */
+  background:
+    radial-gradient(ellipse at center, rgba(8,18,32,0.35) 0%, rgba(8,18,32,0.72) 100%),
+    linear-gradient(to bottom, rgba(8,18,32,0.55) 0%, rgba(8,18,32,0.15) 40%, rgba(8,18,32,0.55) 100%);
 }
-.hero-inner {
+
+.hero-center {
   position: relative;
   z-index: 2;
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 3rem;
+  flex-direction: column;
+  align-items: center;
+  max-width: 820px;
 }
-.hero-copy { max-width: 580px; }
 
-.hero-eyebrow {
-  display: inline-block;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--orange);
-  margin-bottom: 1.2rem;
+/* Trust badge */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.22);
+  backdrop-filter: blur(10px);
+  border-radius: 999px;
+  padding: 0.45rem 1.1rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 1.8rem;
+  letter-spacing: 0.02em;
 }
-.hero h1 { color: var(--white); margin-bottom: 1.4rem; }
+
+/* Headline */
+.hero h1 {
+  color: var(--white);
+  font-size: clamp(3rem, 7vw, 5.2rem);
+  line-height: 1.04;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.4rem;
+  text-shadow: 0 2px 24px rgba(0,0,0,0.3);
+}
 
 .hero-lede {
-  font-size: 1.15rem;
-  color: rgba(255,255,255,0.78);
+  font-size: clamp(1rem, 1.8vw, 1.18rem);
+  color: rgba(255,255,255,0.8);
   line-height: 1.7;
-  max-width: 38rem;
+  max-width: 36rem;
+  margin-bottom: 2.4rem;
+}
+
+/* CTAs */
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 2.2rem;
 }
-.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
 
-/* Floating preview card */
-.hero-card {
-  background: rgba(12,31,55,0.72);
-  border: 1px solid rgba(255,255,255,0.16);
-  backdrop-filter: blur(14px);
-  border-radius: var(--r-lg);
-  overflow: hidden;
-  width: 360px;
-  flex-shrink: 0;
-  box-shadow: var(--shadow-lg);
-  margin-bottom: 0.5rem;
+.btn-hero-ghost {
+  background: rgba(255,255,255,0.1);
+  color: var(--white);
+  border: 2px solid rgba(255,255,255,0.35);
+  backdrop-filter: blur(8px);
 }
-.hero-card-img { width: 100%; height: 220px; object-fit: cover; }
-.hero-card-body { padding: 1.4rem 1.5rem 1.5rem; }
-.hero-card-label {
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--orange);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-}
-.hero-card-desc {
-  font-size: 0.95rem;
-  color: rgba(255,255,255,0.75);
-  margin-bottom: 1.2rem;
-  line-height: 1.5;
+.btn-hero-ghost:hover {
+  background: rgba(255,255,255,0.2);
+  border-color: rgba(255,255,255,0.7);
+  transform: translateY(-1px);
 }
 
-@media (max-width: 900px) {
-  .hero { min-height: auto; padding: 8rem 0 5rem; }
-  .hero-inner { flex-direction: column; align-items: flex-start; }
-  .hero-card { display: none; }
+/* Trust pills */
+.hero-pills {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.hero-pill {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 999px;
+  padding: 0.3rem 0.85rem;
+  letter-spacing: 0.02em;
+}
+
+/* Scroll indicator */
+.hero-scroll {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.hero-scroll span {
+  display: block;
+  width: 24px;
+  height: 38px;
+  border: 2px solid rgba(255,255,255,0.4);
+  border-radius: 999px;
+  position: relative;
+}
+.hero-scroll span::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 8px;
+  background: rgba(255,255,255,0.7);
+  border-radius: 999px;
+  animation: scrollDot 1.8s ease-in-out infinite;
+}
+@keyframes scrollDot {
+  0%   { opacity: 1; transform: translateX(-50%) translateY(0); }
+  80%  { opacity: 0; transform: translateX(-50%) translateY(12px); }
+  100% { opacity: 0; transform: translateX(-50%) translateY(12px); }
+}
+
+@media (max-width: 700px) {
+  .hero { padding: 7rem 1rem 6rem; }
+  .hero-pills { gap: 0.4rem; }
+  .hero-pill { font-size: 0.72rem; }
 }
 
 /* ─── Stats Bar ──────────────────────────────────────── */
