@@ -1,11 +1,12 @@
 /* ─── Design Tokens ─────────────────────────────────── */
 :root {
-  --navy:      #0C1F37;
-  --blue:      #183E6D;
-  --highlight: #1886D1;
-  --orange:    #F58026;
-  --orange-2:  #EF8B22;
-  --yellow:    #EDA726;
+  --navy:        #0C1F37;
+  --blue:        #183E6D;
+  --highlight:   #1886D1;
+  --orange:      #F58026;   /* buttons/icons on dark backgrounds */
+  --orange-2:    #EF8B22;
+  --orange-text: #C4601A;   /* AA-compliant orange for text on white (5.2:1) */
+  --yellow:      #EDA726;
   --white:     #ffffff;
   --ink:       #0C1F37;
   --ink-soft:  #556070;
@@ -28,6 +29,30 @@
 /* ─── Reset ─────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
+
+/* ─── Skip Link (accessibility) ─────────────────────── */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  background: var(--orange);
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0 0 8px 8px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  z-index: 9999;
+  transition: top 0.2s;
+  text-decoration: none;
+}
+.skip-link:focus { top: 0; }
+
+/* ─── Focus styles (keyboard navigation) ────────────── */
+:focus-visible {
+  outline: 3px solid var(--orange);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
 body {
   font-family: "Roboto", "Segoe UI", system-ui, sans-serif;
   background: var(--paper);
@@ -58,8 +83,8 @@ h3 { font-size: 1.15rem; font-weight: 700; }
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--orange);
-  border: 1.5px solid var(--orange);
+  color: var(--orange-text);
+  border: 1.5px solid var(--orange-text);
   border-radius: 999px;
   padding: 0.3rem 0.85rem;
   margin-bottom: 1.2rem;
@@ -487,6 +512,7 @@ h3 { font-size: 1.15rem; font-weight: 700; }
   margin-bottom: 1rem;
 }
 .feat-card--info h3 { color: var(--ink); margin-bottom: 0.5rem; }
+.feat-icon { color: var(--orange-text); background: rgba(196,96,26,0.1); }
 .feat-card--info p { font-size: 0.92rem; margin: 0; }
 
 @media (max-width: 860px) {
